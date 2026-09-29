@@ -2,7 +2,8 @@
     // 1. CHOOSE YOUR URL: 
     // While developing locally, use: "http://localhost:10000"
     // When deploying live to production, swap it to your live Render backend URL
-    const BACKEND_URL = "http://localhost:10000"; 
+    const BACKEND_URL = "https://onrender.com"; 
+ 
 
     const grid = document.getElementById("collectionGrid");
     const count = document.getElementById("collectionCount");
