@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff8f5">
+    <meta name="description" content="A little love story, made just for us.">
+    <title>Mon Amour — Our little love story</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/magic.css">
+</head>
+<body class="intro-active">
+    <div class="sky-scene" aria-hidden="true">
+        <span class="sun-orb"></span>
+        <span class="sky-cloud sky-cloud-one"></span>
+        <span class="sky-cloud sky-cloud-two"></span>
+    </div>
+    <div class="rain-layer" aria-hidden="true"></div>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="floating-hearts" aria-hidden="true"></div>
+    <div class="butterfly-field" aria-hidden="true"></div>
+
+    <main>
+        <section class="intro-screen" id="introScreen" aria-labelledby="introQuestion">
+            <div class="intro-card">
+                <span class="eyebrow">A little question for you</span>
+                <div class="intro-heart" aria-hidden="true">♡</div>
+                <p class="intro-for">For my</p>
+                <h1 class="intro-name">Mon Amour</h1>
+                <p class="intro-recipient">Jamila</p>
+                <span class="little-rule" aria-hidden="true"></span>
+                <h2 id="introQuestion">Do you love me?</h2>
+                <p class="intro-hint">Choose carefully... or just follow your heart.</p>
+                <div class="answer-area" id="answerArea">
+                    <button class="button button-primary" id="yesBtn" type="button">Yes, always <span aria-hidden="true">♥</span></button>
+                    <button class="button button-quiet" id="noBtn" type="button">No</button>
+                </div>
+                <span class="intro-note">Made with all my love</span>
+            </div>
+        </section>
+
+        <section class="love-reveal" id="loveReveal" aria-live="polite" aria-hidden="true">
+            <div class="reveal-content">
+                <span class="reveal-sparkle" aria-hidden="true">✦</span>
+                <span class="reveal-heart" aria-hidden="true">♥</span>
+                <h2>I love you too</h2>
+                <p>And I always will.</p>
+            </div>
+        </section>
+
+        <div class="main-site" id="mainSite" aria-hidden="true">
+            <header class="site-header">
+                <a class="brand" href="#home" aria-label="Mon Amour home"><span>♡</span> mon amour</a>
+                <nav class="main-nav" aria-label="Main navigation">
+                    <a href="#memories">Our moments</a>
+                    <a href="#her">Mon Amour</a>
+                    <a href="#him">Joseph</a>
+                    <a href="#dances">Our dances</a>
+                    <a href="pages/gallery.html">Photos &amp; dance</a>
+                    <a href="#reasons">Reasons</a>
+                    <a href="#letter">A letter</a>
+                    <a href="#contribute">Add memories</a>
+                </nav>
+                <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme">
+                    <span class="theme-icon" aria-hidden="true">☼</span><span class="theme-label">Light</span>
+                </button>
+                <button class="music-toggle" id="musicToggle" type="button" aria-label="Play our music" aria-pressed="false">
+                    <span class="music-icon" aria-hidden="true">♫</span><span class="music-label">Our song</span>
+                </button>
+            </header>
+
+            <section class="hero section-wrap" id="home">
+                <div class="hero-copy reveal-on-scroll">
+                    <span class="eyebrow">A little corner of the world, just for us</span>
+                    <h1>Every love story is lovely,<br><em>but ours is my favorite.</em></h1>
+                    <p>A collection of our little moments, our big laughs, and all the reasons you feel like home.</p>
+                    <a class="text-link" href="#memories">Take a little look <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="hero-art reveal-on-scroll" aria-label="Romantic illustration">
+                    <div class="hero-photo">
+                        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1000&q=85" alt="A couple sharing a sweet moment" fetchpriority="high">
+                        <span class="photo-caption">my favorite place is next to you</span>
+                    </div>
+                    <span class="hero-stamp" aria-hidden="true">you + me<br>always</span>
+                    <span class="hero-doodle" aria-hidden="true">♡</span>
+                </div>
+                <span class="hero-bottom-note">scroll to wander <span aria-hidden="true">⌄</span></span>
+            </section>
+
+            <section class="intro-quote">
+                <span aria-hidden="true">“</span>
+                <p>Some people make ordinary moments feel like the best days of your life.</p>
+                <span class="quote-signature">You do that for me.</span>
+            </section>
+
+            <section class="gallery-section section-wrap" id="memories">
+                <div class="section-heading reveal-on-scroll">
+                    <span class="eyebrow">The little things we keep</span>
+                    <h2>Our moments</h2>
+                    <p>All our uploaded photos and dances are gathered together in one little corner.</p>
+                    <a class="text-link" href="pages/gallery.html">Browse photos &amp; dances <span aria-hidden="true">→</span></a>
+                </div>
+            </section>
+
+            <section class="person-section person-her" id="her">
+                <div class="person-copy reveal-on-scroll">
+                    <span class="eyebrow">A whole gallery for</span>
+                    <h2>My beautiful<br><em>Mon Amour.</em></h2>
+                    <p>For the smile that brightens every room, and the heart that makes everything feel warmer.</p>
+                    <span class="handwritten">the loveliest view ♡</span>
+                </div>
+                <div class="portrait-grid">
+                    <img class="jamila-photo" src="/uploads/her/353cb7fa-4632-40e1-98f0-fe09ffa55e86.jpg" alt="Portrait outdoors in the garden" loading="lazy">
+                    <img class="jamila-photo jamila-photo--rotated" src="/uploads/her/dfb521bc-927c-4e15-b065-13710b15bc4b.jpg" alt="Casual outdoor portrait" loading="lazy">
+                </div>
+            </section>
+
+            <section class="person-section person-him" id="him">
+                <div class="portrait-grid">
+                    <img class="his-photo" src="assets/his-classroom.png" alt="Joseph in a classroom" loading="lazy">
+                    <img class="his-photo" src="assets/his-casual.png" alt="Joseph relaxing at home" loading="lazy">
+                </div>
+                <div class="person-copy reveal-on-scroll">
+                    <span class="eyebrow">And a little space for</span>
+                    <h2>Your favorite<br><em>Joseph.</em></h2>
+                    <p>That's me — the lucky one who gets to love you, cheer for you, and call you mine.</p>
+                    <span class="handwritten">always on your team ♡</span>
+                </div>
+            </section>
+
+            <section class="dance-section section-wrap" id="dances">
+                <div class="section-heading reveal-on-scroll">
+                    <span class="eyebrow">Two hearts, one rhythm</span>
+                    <h2>Our dances</h2>
+                    <p>Because everything is a little more fun when we move through it together.</p>
+                </div>
+                <div class="dance-grid" data-gallery="dances">
+                    <div class="dance-card dance-placeholder"><span class="dance-play" aria-hidden="true">▶</span><span>Our next dance goes here</span></div>
+                    <div class="dance-card dance-placeholder"><span class="dance-play" aria-hidden="true">▶</span><span>Save a little space for us</span></div>
+                </div>
+            </section>
+
+            <section class="reasons-section" id="reasons">
+                <div class="reasons-inner section-wrap">
+                    <div class="section-heading reveal-on-scroll">
+                        <span class="eyebrow">I could go on forever</span>
+                        <h2>A few reasons<br><em>why I love you</em></h2>
+                    </div>
+                    <div class="reason-list">
+                        <article class="reason-item reveal-on-scroll"><span>01</span><p>The way you make me laugh, even when I think I can't.</p><span aria-hidden="true">♡</span></article>
+                        <article class="reason-item reveal-on-scroll"><span>02</span><p>Your kind heart and the way you care about the people you love.</p><span aria-hidden="true">♡</span></article>
+                        <article class="reason-item reveal-on-scroll"><span>03</span><p>How being with you makes anywhere feel like home.</p><span aria-hidden="true">♡</span></article>
+                        <article class="reason-item reveal-on-scroll"><span>04</span><p>All the little things that are simply, wonderfully you.</p><span aria-hidden="true">♡</span></article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="letter-section section-wrap" id="letter">
+                <article class="letter-card reveal-on-scroll">
+                    <span class="letter-flower" aria-hidden="true">✿</span>
+                    <span class="eyebrow">A note from my heart</span>
+                    <h2>My dearest Jamila,</h2>
+                    <p>There are a thousand little ways you make my life brighter. The way you dance, the way you laugh, and the way you make even an ordinary day feel special — I hold all of it close.</p>
+                    <p>Thank you for being exactly who you are, and for letting me be part of your story. No matter where life takes us, I'll always be grateful for every moment we get to share.</p>
+                    <p class="letter-signoff">All my love, always,<br><em>Your person ♡</em></p>
+                </article>
+            </section>
+
+            <section class="contribute-section section-wrap" id="contribute">
+                <div class="contribute-card reveal-on-scroll">
+                    <span class="contribute-spark" aria-hidden="true">✦</span>
+                    <span class="eyebrow">Our story is still growing</span>
+                    <h2>Add a little<br><em>more magic.</em></h2>
+                    <p>Got a photo, a dance, or our favorite song? Add it to the right little corner of our story.</p>
+                    <a class="button button-primary contribute-button" href="pages/upload.html">Add our memories <span aria-hidden="true">♡</span></a>
+                    <a class="text-link" href="pages/gallery.html">Browse every photo and dance <span aria-hidden="true">→</span></a>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <span aria-hidden="true">♡</span>
+                <p>Made with love, for my favorite person.</p>
+                <a href="#home">Back to the beginning ↑</a>
+            </footer>
+        </div>
+    </main>
+
+    <audio id="backgroundMusic" loop preload="none"></audio>
+    <script src="js/magic.js" defer></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+    <script src="js/music.js" defer></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

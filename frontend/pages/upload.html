@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff8f5">
+    <title>Private keepsakes · Mon Amour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/magic.css">
+</head>
+<body class="upload-page">
+    <div class="sky-scene" aria-hidden="true">
+        <span class="sun-orb"></span>
+        <span class="sky-cloud sky-cloud-one"></span>
+        <span class="sky-cloud sky-cloud-two"></span>
+    </div>
+    <div class="rain-layer" aria-hidden="true"></div>
+    <div class="floating-hearts" aria-hidden="true"></div>
+    <div class="butterfly-field" aria-hidden="true"></div>
+    <main class="upload-shell">
+        <nav class="upload-navigation" aria-label="Page navigation">
+            <a class="page-back-button" href="../index.html"><span aria-hidden="true">←</span> Back to our story</a>
+            <a class="page-back-button page-back-button--secondary" href="gallery.html">Photos &amp; dances <span aria-hidden="true">→</span></a>
+            <button class="music-toggle" id="musicToggle" type="button" aria-label="Play our music" aria-pressed="false">
+                <span class="music-icon" aria-hidden="true">♫</span><span class="music-label">Our song</span>
+            </button>
+        </nav>
+        <a class="brand upload-brand" href="../index.html"><span>♡</span> mon amour</a>
+        <section class="upload-card" id="managerPanel">
+            <div class="manager-topline">
+                <div>
+                    <span class="eyebrow">Come on in, everyone</span>
+                    <h1>Add a little magic.</h1>
+                </div>
+                <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme">
+                    <span class="theme-icon" aria-hidden="true">☼</span><span class="theme-label">Light</span>
+                </button>
+            </div>
+            <p>Share a photo, dance, or song and let it find its place in our love story.</p>
+            <form id="uploadForm">
+                <label for="category">Add to</label>
+                <select id="category" name="category">
+                    <option value="memories">Our moments · photos</option>
+                    <option value="her">Mon Amour's gallery · photos</option>
+                    <option value="him">Joseph's gallery · photos</option>
+                    <option value="dances">Our dances · videos</option>
+                    <option value="music">Our song · audio</option>
+                </select>
+                <label class="file-drop" for="filesInput">
+                    <span class="file-drop-icon" aria-hidden="true">↑</span>
+                    <strong>Choose files to add</strong>
+                    <span id="fileHint">JPG, PNG, WebP, or GIF · up to 12 MB each; up to 90 photos</span>
+                    <span class="file-selection" id="fileSelection">No files selected yet</span>
+                </label>
+                <input class="visually-hidden" id="filesInput" name="files" type="file" multiple accept="image/jpeg,image/png,image/webp,image/gif">
+                <button class="button button-primary upload-submit" id="uploadButton" type="submit">Add to our story <span aria-hidden="true">♡</span></button>
+                <p class="upload-message" id="uploadMessage" role="status"></p>
+            </form>
+            <p class="upload-public-note">This page is open to everyone. Please only add kind, appropriate memories.</p>
+        </section>
+        <p class="upload-footnote"><a href="../index.html">Back to our story</a><span>·</span> Shared with love, stored on this server.</p>
+        <p class="upload-footnote"><a href="gallery.html">Browse all photos &amp; dances</a></p>
+    </main>
+    <audio id="backgroundMusic" loop preload="none"></audio>
+    <script src="../js/theme.js" defer></script>
+    <script src="../js/magic.js" defer></script>
+    <script src="../js/music.js" defer></script>
+    <script src="../js/upload.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+@media (max-width: 900px) {
+    .site-header { flex-wrap: wrap; justify-content: space-between; padding-block: 13px; }
+    .main-nav { order: 3; width: 100%; justify-content: flex-start; overflow-x: auto; padding: 4px 0 2px; scrollbar-width: none; }
+    .main-nav::-webkit-scrollbar { display: none; }
+    .main-nav a { flex: 0 0 auto; }
+    .hero { min-height: 0; gap: 5%; padding-block: 75px 95px; }
+    .hero-photo { height: 360px; }
+    .person-section { gap: 5%; padding-inline: 6vw; }
+    .portrait-grid img { height: 300px; }
+    .portrait-grid img:nth-child(2) { height: 245px; }
+}
+
+@media (max-width: 640px) {
+    html { scroll-padding-top: 112px; }
+    .intro-screen { padding: 16px; }
+    .intro-card { padding-inline: 8px; }
+    .intro-heart { margin-top: 21px; }
+    .answer-area { min-height: 70px; gap: 10px; }
+    .button { min-height: 46px; padding-inline: 20px; font-size: .88rem; }
+    .site-header { min-height: 0; padding: 12px 20px 8px; }
+    .brand { font-size: 1.1rem; }
+    .music-toggle, .theme-toggle { padding: 8px 11px; }
+    .main-nav { gap: 20px; }
+    .main-nav a { font-size: .7rem; }
+    .section-wrap { width: min(100% - 36px, 480px); }
+    .hero { grid-template-columns: 1fr; gap: 40px; padding-block: 65px 72px; }
+    .hero-copy { text-align: center; }
+    .hero-copy > p { margin-inline: auto; }
+    .hero-art { width: min(83%, 340px); }
+    .hero-photo { height: min(410px, 105vw); }
+    .hero-stamp { right: -28px; width: 75px; height: 75px; font-size: .72rem; }
+    .hero-bottom-note { bottom: 20px; }
+    .intro-quote { padding-block: 65px; }
+    .gallery-section, .dance-section { padding-block: 78px; }
+    .section-heading { margin-bottom: 30px; }
+    .photo-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .memory-card, .memory-card-featured { height: 240px; }
+    .memory-card-featured { grid-column: 1 / -1; height: 300px; }
+    .card-caption { font-size: .96rem; }
+    .person-section { grid-template-columns: 1fr; gap: 32px; padding: 70px 24px; }
+    .person-copy { text-align: center; }
+    .person-copy > p { margin-inline: auto; }
+    .person-her .person-copy { order: 1; }
+    .person-her .portrait-grid { order: 2; }
+    .person-him .portrait-grid { order: 2; }
+    .person-him .person-copy { order: 1; }
+    .portrait-grid { width: min(100%, 440px); margin-inline: auto; gap: 10px; }
+    .portrait-grid img { height: 300px; }
+    .portrait-grid img:nth-child(2) { height: 250px; margin-top: 45px; }
+    .portrait-grid .gallery-item { height: 280px; }
+    .portrait-grid .gallery-item:nth-child(2) { height: 240px; margin-top: 42px; }
+    .dance-grid { grid-template-columns: 1fr; }
+    .dance-card, .dance-grid .gallery-item { min-height: 220px; }
+    .reasons-section { padding-block: 74px; }
+    .reasons-inner { grid-template-columns: 1fr; gap: 32px; }
+    .reasons-inner .section-heading { text-align: center; }
+    .reason-item { grid-template-columns: 28px 1fr 18px; gap: 10px; padding-block: 17px; }
+    .reason-item p { font-size: 1rem; }
+    .letter-section { padding-block: 72px; }
+    .letter-card { padding: 36px 25px; }
+    .letter-flower { top: 15px; right: 18px; font-size: 1.7rem; }
+    .upload-theme-toggle { top: 12px; right: 12px; }
+    .upload-card { padding-top: 58px; }
+    .site-footer { justify-content: center; padding-inline: 20px; text-align: center; }
+    .site-footer > span { display: none; }
+    .site-footer p, .site-footer a { flex-basis: 100%; }
+}
