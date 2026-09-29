@@ -1,4 +1,9 @@
 (() => {
+    // 1. CHOOSE YOUR URL: 
+    // While developing locally, use: "http://localhost:10000"
+    // When deploying live to production, swap it to your live Render backend URL
+    const BACKEND_URL = "http://localhost:10000"; 
+
     const grid = document.getElementById("collectionGrid");
     const count = document.getElementById("collectionCount");
     const empty = document.getElementById("collectionEmpty");
@@ -55,7 +60,7 @@
         submitButton.disabled = true;
         ownerMessage.textContent = "Checking owner password...";
         try {
-            await readApiResponse(await fetch("../api/admin/login", {
+            await readApiResponse(await fetch(`${BACKEND_URL}/api/admin/login`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ password: ownerPassword.value })
@@ -73,7 +78,7 @@
     ownerLogout.addEventListener("click", async () => {
         ownerLogout.disabled = true;
         try {
-            await readApiResponse(await fetch("../api/admin/logout", { method: "POST" }));
+            await readApiResponse(await fetch(`${BACKEND_URL}/api/admin/logout`, { method: "POST" }));
             setOwnerAuthenticated(false);
             ownerMessage.textContent = "You have signed out.";
         } catch (logoutError) {
@@ -89,7 +94,7 @@
         if (!window.confirm(`Permanently remove ${label} from the gallery?`)) return;
         ownerMessage.textContent = "Removing photo...";
         try {
-            await readApiResponse(await fetch("../api/media/delete", {
+            await readApiResponse(await fetch(`${BACKEND_URL}/api/media/delete`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ category: item.category, filename: item.filename })
@@ -105,6 +110,7 @@
             ownerMessage.textContent = deleteError.message || "Could not remove this photo.";
         }
     }
+
 
     function matchesFilter(item) {
         return activeFilter === "photos"
